@@ -1,0 +1,22 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: titleFont;
+    text-shadow: 1px 1px #F1F1F1;
+}
+
+p, sub{
+    font-family: contentFont;
+    font-size: 1.1rem;
+}
+
+.nav-link{
+    font-family: navigationLinkFont;
+    font-size: 1.4rem;
+
+    &:hover{
+        
+    }
+}
+
+#title-nav-top{
+    font-style: italic;
+}

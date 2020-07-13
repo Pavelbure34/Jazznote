@@ -1,0 +1,115 @@
+#home, #reviews{
+    display: grid;
+    width: 100%;
+    height:100vh;
+    margin: 0;
+    
+    // grid-template-columns: 6% 88% 6%;
+    grid-template-rows: 35vh auto 10vh;
+    @media screen and (max-width: $tablet-break) {
+        // grid-template-columns: 2% 96% 2%;
+        grid-template-rows: 30vh auto 10vh;
+    }
+
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+
+    header{
+        display:flex;
+        background-color:#FFFFFF;
+        justify-content: center;
+        align-items: center;
+
+        #basic-navbar-nav{
+            background-color: #FFFFFF;
+            text-align: center;
+            padding:5px 5px 5px 5px;
+            border-radius: 10px;
+            z-index:100;
+        }
+
+        .header-content{
+            text-align: center;
+        }
+    }
+}
+
+
+#home{
+    .main-content{
+        #current-month{
+            text-align: center;
+        }
+
+        #main-content-grid{
+            background-color: #333333;
+        }       
+
+
+        .main-content-body{
+            display:flex;
+            @media (max-width: $mobile-break) {
+                display:block;
+                justify-content: center;
+            }
+
+            .main-content-body-image{
+                width:40%;
+                height:40vh;
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+
+                @media (max-width: $mobile-break) {
+                    width:100%;
+                    height:30vh;
+                }
+            }
+
+            .main-content-body-text{
+                display:flex;
+                margin:0 0 0 2vw;
+                width:50%;
+                text-align: left;
+                @media (max-width: $mobile-break) {
+                    display:block;
+                    width:100%;
+                    margin:2vh 0 0 0;
+                }
+
+                h2{
+                    justify-content: start;
+                    align-self: flex-start;
+                }
+
+                p{
+                    justify-content: end;
+                    align-self: flex-end;
+                }
+            }
+        }
+
+        #album-of-this-month{
+            .main-content-body-image{
+                height:45vh;
+                @media (max-width: $mobile-break) {
+                    height:35vh;
+                }
+            }
+
+            .album-of-this-month-artist-name{
+                margin:0 2vh 0 0;
+            }
+
+            .album-of-this-month-artist-image{
+                width:100px;
+                height:100px;
+                justify-self: right;
+                align-self: flex-end;
+            }
+        }
+   
+    }
+}
