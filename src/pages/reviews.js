@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Navigation, Footer, Icon} from '../components';
-import {InputGroup, FormControl, Button} from 'react-bootstrap';
+import {InputGroup, FormControl, Button, Jumbotron} from 'react-bootstrap';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 const Reviews = ()=>{
@@ -11,10 +11,20 @@ const Reviews = ()=>{
             <header>
                 <Navigation/>
                 <section id="header-content">
-                    <h1>Monthly Reviews</h1>
+                    <h1 className="title">Jazz Note</h1>
+                    <sub>Music and Review</sub>
                 </section>
             </header>
             <section className="main-content">
+                <Jumbotron id="reviews-jumbotron" className="main-content-jumbotron">
+                    <div className="main-content-jumbotron-text">
+                        <h2>Monthly Review</h2>
+                        <p>
+                            I post monthly reviews here.
+                            You can find all my previous reviews here.
+                        </p>
+                    </div>
+                </Jumbotron>
                 <InputGroup className="mb-3">
                     <FormControl
                         onChange={event=>setSearch(event.target.value)}

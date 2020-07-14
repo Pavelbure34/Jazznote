@@ -22,16 +22,48 @@
         justify-content: center;
         align-items: center;
 
+        #basic-navbar-nav-toggle{
+            z-index:100;
+            background-color: #F5F5F5;
+        }
+
         #basic-navbar-nav{
             background-color: #FFFFFF;
             text-align: center;
             padding:5px 5px 5px 5px;
             border-radius: 10px;
             z-index:100;
+            top:0;
+            left:0;
+            right:0;
+            position:fixed;
         }
 
-        .header-content{
+        #header-content{
             text-align: center;
+        }
+    }
+
+    .main-content{
+        .main-content-jumbotron{
+            position: relative;
+            z-index:1;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            overflow:hidden;
+            @media (max-width: $tablet-break) {
+                height:auto;
+            }
+
+            .main-content-jumbotron-text{
+                width:50%;
+                color:#FFFFFF;
+                @media (max-width: $tablet-break) {
+                    width:80%;
+                }
+            }
         }
     }
 }
@@ -57,7 +89,7 @@
 
             .main-content-body-image{
                 width:40%;
-                height:40vh;
+                // height:40vh;
                 background-repeat: no-repeat;
                 background-position-x: center;
                 background-position-y: center;
@@ -91,11 +123,26 @@
             }
         }
 
+        #about-this-blog{
+            background:rgba(0,0,0, 0.3);
+            height: 40vh;
+
+            .video-bg{
+                position: absolute;
+                z-index:-1;
+                min-width:100%;
+                min-height:100%;
+            }
+        }
+
         #album-of-this-month{
             .main-content-body-image{
                 height:45vh;
                 @media (max-width: $mobile-break) {
-                    height:35vh;
+                    display:block;
+                    width:95%;
+                    height:auto;
+                    margin:0 auto 0 auto;
                 }
             }
 
@@ -111,5 +158,11 @@
             }
         }
    
+    }
+}
+
+#reviews{
+    .main-content{
+
     }
 }
