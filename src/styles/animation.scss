@@ -1,0 +1,11 @@
+@keyframes reviews-image-mover{
+    0%{
+        background-position-y: top;
+    }
+    50%{
+        background-position-y: bottom;
+    }
+    100%{
+        background-position-y: top;
+    }
+}

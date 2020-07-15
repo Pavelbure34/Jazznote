@@ -1,11 +1,29 @@
 import React from 'react';
-import {Navigation, Footer} from '../components';
+import {PopularReviews} from '../data';
+import {Navigation, Footer, Card} from '../components';
 import {Jumbotron} from 'react-bootstrap';
 import {Sample_Album, Sample_Arist} from '../assets/images';
 import {SpinningTurnTable as Turntable} from '../assets/video';
 
 const Home = ()=>{
     let today = new Date();
+
+    const renderReviews = (reviews)=>{
+        return reviews.map(review=>{
+            const {
+                id, album, artist, month,
+                year, link, image
+            } = review;
+            return (
+                <Card
+                    key={id} image={image}
+                    album={album} artist={artist}
+                    month={month} year={year}
+                    link={link}
+                />
+            )
+        });
+    };
 
     return (
         <div id="home">
@@ -54,8 +72,20 @@ const Home = ()=>{
                     </div>
                </div>
                <hr/>
+               <h3 className="center-text">Recent Reviews</h3>
+                <br/>
+                <div id="reviews-previous-reviews">
+                    {renderReviews(PopularReviews)}
+                </div>
+                <hr/>
+                <h3 className="center-text">Popular Reviews</h3>
+                <br/>
+                <div id="reviews-previous-reviews">
+                    {renderReviews(PopularReviews)}
+                </div>
            </section>
            <footer>
+                <hr/>
                 <Footer/>
            </footer>
         </div>

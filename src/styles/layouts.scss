@@ -88,7 +88,7 @@
             }
 
             .main-content-body-image{
-                width:40%;
+                width:33.3%;
                 // height:40vh;
                 background-repeat: no-repeat;
                 background-position-x: center;
@@ -163,6 +163,15 @@
 
 #reviews{
     .main-content{
-
+        #reviews-jumbotron{
+            background-image: url('../assets/images/reviewpage.jpg');
+            background-position-x: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            -webkit-animation: reviews-image-mover 25s infinite; /* Safari 4+ */
+            -moz-animation:    reviews-image-mover 25s infinite; /* Fx 5+ */
+            -o-animation:      reviews-image-mover 25s infinite; /* Opera 12+ */
+            animation:         reviews-image-mover 25s infinite; /* IE 10+, Fx 29+ */
+        }
     }
 }
