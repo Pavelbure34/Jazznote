@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {PopularReviews, SampleReviews} from '../data';
-import {RenderMonth} from '../funcs';
-import {Navigation, Footer, Icon, Card, Mainlogo} from '../components';
+import {SampleReviews} from '../data';
+import {RenderMonth, ToLowerCase, RenderReviews} from '../funcs';
+import {Navigation, Footer, Icon, Card, Mainlogo, PopularReviews} from '../components';
 import {InputGroup, FormControl, Button, Jumbotron, Form} from 'react-bootstrap';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
@@ -16,23 +16,6 @@ const Reviews = ()=>{
     const [month, setMonth] = useState(current_month)
     const [year, setYear] = useState(current_year)
    
-    const renderReviews = (reviews)=>{
-        return reviews.map(review=>{
-            const {
-                id, album, artist, month,
-                year, link, image
-            } = review;
-            return (
-                <Card
-                    key={id} image={image}
-                    album={album} artist={artist}
-                    month={month} year={year}
-                    link={link}
-                />
-            )
-        });
-    };
-
     const renderYearOptions = ()=>{
         const years = [];
         for (let i = 2020; i <= current_year; i++)
@@ -77,6 +60,7 @@ const Reviews = ()=>{
             return (
                 <InputGroup className="mb-3">
                     <FormControl
+                        onKeyUp={event=>(event.keyCode === 13)?filterSearchResult():null}
                         onChange={event=>setSearch(event.target.value)}
                         placeholder={renderFilterText()}
                         aria-describedby="basic-addon2"
@@ -92,16 +76,17 @@ const Reviews = ()=>{
 
     const filterSearchResult = ()=>{
         let res = [];
-
-        if (search !== "" && (searchBy === "Title" || searchBy === "Artist"))
+    
+        if (search !== "" && (searchBy === "Title" || searchBy === "Artist")){
+            const keyword = ToLowerCase(search).trim();
             res = SampleReviews.filter(item=>{
                 const {album, artist} = item;
-                if (searchBy === "Title" && album.includes(search))
+                if (searchBy === "Title" && ToLowerCase(album).trim().includes(keyword))
                     return item;
-                else if (searchBy === "Artist" && artist.includes(search))
+                else if (searchBy === "Artist" && ToLowerCase(artist).trim().includes(keyword))
                     return item;
             });
-        else if (searchBy === "Date"){
+        } else if (searchBy === "Date"){
             res = SampleReviews.filter(item=>{
                 if (item.year === year && item.month === month)
                     return item;
@@ -144,14 +129,10 @@ const Reviews = ()=>{
                     {renderSearchbar()}
                 </div>
                 <div id="reviews-search-result">
-                    {renderReviews(result)}
+                    {RenderReviews(result)}
                 </div>
                 <hr/>
-                <h3 className="center-text">Popular Reviews</h3>
-                <br/>
-                <div id="reviews-previous-reviews">
-                    {renderReviews(PopularReviews)}
-                </div>
+                <PopularReviews/>
             </section>
             <footer>
                 <hr/>

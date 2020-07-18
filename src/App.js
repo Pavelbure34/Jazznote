@@ -4,8 +4,20 @@ import {
   Switch, Route, Redirect
 } from 'react-router-dom';
 import {Home, Reviews} from './pages';
+import {Articles} from './articles';
 
 const App = ()=>{
+  const renderArticlesLinks = ()=>{
+    return Articles.map(item=>{
+      const {id, Post, link} = item;
+      return (
+        <Route key={id} exact path={link}>
+            <Post/>
+        </Route>
+      );
+    });
+  };
+
   return (
     <Router>
       <Switch>
@@ -15,6 +27,7 @@ const App = ()=>{
         <Route exact path="/reviews">
           <Reviews/>
         </Route>
+        {renderArticlesLinks()}
         <Redirect to="/home"/>
       </Switch>
     </Router>

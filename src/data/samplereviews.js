@@ -7,7 +7,7 @@ const PopularReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     },
     {
@@ -16,7 +16,7 @@ const PopularReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     },
     {
@@ -25,7 +25,7 @@ const PopularReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     }
 ];
@@ -37,7 +37,7 @@ const SampleReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     },
     {
@@ -46,7 +46,7 @@ const SampleReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     },
     {
@@ -55,7 +55,7 @@ const SampleReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     },
     {
@@ -64,7 +64,7 @@ const SampleReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     },
     {
@@ -73,7 +73,7 @@ const SampleReviews = [
         artist:'The Oscar Peterson Trio',
         month: 7,
         year: 2020,
-        link:'',
+        link:'/reviews/wegetrequests',
         image: Sample_Album
     }
 ];

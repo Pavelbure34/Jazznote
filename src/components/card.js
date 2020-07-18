@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {RenderMonth} from '../funcs';
 
 const Card = (props)=>{
@@ -22,9 +23,11 @@ const Card = (props)=>{
                     <h5>{album}</h5>
                     <p>{artist}</p>
                     <p>
-                        <button type="button" className="btn btn-outline-light btn-lg btn-block">
-                            Read this Review
-                        </button>
+                        <Link to={link}>
+                            <button type="button" className="btn btn-outline-light btn-lg btn-block">
+                                Read this Review
+                            </button>
+                        </Link>
                     </p>
                 </div>
             </div>
