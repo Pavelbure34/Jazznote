@@ -1,5 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This project is Jazz review blog.
+This is my personal project called Jazz Note. I aim to review Jazz albums of my choice
+monthly in this project. I plan to launch this blog. Until then this code is public.
+This project is made with React, Bootstrap, React-Bootstrap, SASS, and React-fontawesome.
+The stock images in this project are from unsplash.com. 
+It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

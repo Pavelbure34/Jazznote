@@ -3,7 +3,7 @@
     margin: 1vh auto 0 auto;
     width:28vw;
     @media (max-width: $tablet-break) {
-        width:45vw;
+        width:300px;
     }
 }
 
@@ -73,6 +73,7 @@
     }
      
     .text {
+        text-align: center;
         color: #FFFFFF;
         font-size: 20px;
         position: absolute;
