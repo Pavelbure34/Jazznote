@@ -1,6 +1,7 @@
 import React from 'react';
 import {PopularReviews} from '../data';
-import {Navigation, Footer, Card} from '../components';
+import {RenderMonth} from '../funcs';
+import {Navigation, Footer, Card, Mainlogo} from '../components';
 import {Jumbotron} from 'react-bootstrap';
 import {Sample_Album, Sample_Arist} from '../assets/images';
 import {SpinningTurnTable as Turntable} from '../assets/video';
@@ -28,20 +29,18 @@ const Home = ()=>{
     return (
         <div id="home">
            <header>
-               <Navigation/>
+                <Navigation/>
                 <section id="header-content">
-                    <h1 className="title">Jazz Note</h1>
-                    <sub>Music and Review</sub>
+                    <Mainlogo/>
                 </section>
            </header>
            <section className="main-content">
                 <Jumbotron id="about-this-blog" className="main-content-jumbotron">
                     <div className="main-content-jumbotron-text">
-                        <h2>About this Blog</h2>
+                        <h3>About this Blog</h3>
                         <p>
                             I post reviews of Jazz albums of my choice.
-                            I am Dongbin Alistaire Suh, a software engineer, Jazz enthusiast, and amateur Jazz pianist.
-                            You can find my previous reviews in "Monthly Album Review" link above.
+                            I am Dongbin Alistaire Suh, a Jazz enthusiast, and amateur Jazz pianist.
                         </p>
                     </div>
                     <video
@@ -52,32 +51,17 @@ const Home = ()=>{
                         <source src={Turntable} type="video/mp4"/>
                     </video>
                </Jumbotron>
-               <hr/>
+               <h3 className="center-text">Recent Review</h3>
+               <br/>
                 <div id="album-of-this-month" className="main-content-body">
-                    <img src={Sample_Album} className="main-content-body-image" alt="album"/>
-                    <div className="main-content-body-text">
-                        <div>
-                            <sub>{today.getMonth() + 1}. {today.getFullYear()}</sub>
-                            <h2>We Get Requests</h2>
-                            <p className="album-of-this-month-artist-name">
-                                The Oscar Peterson Trio
-                            </p>
-                        </div>
-                        
-                        <p className="album-of-this-month-artist-name">
-                            Oscar Peterson<br/>
-                            (1925 ~ 2007)
-                        </p>
-                        <img src={Sample_Arist} className="album-of-this-month-artist-image" alt="artist"/>
-                    </div>
+                    <Card
+                        image={Sample_Album}
+                        album={"We Get Requests"} artist={"Oscar Peterson"}
+                        month={today.getMonth() + 1} year={2020}
+                        link={''} size="fluid"
+                    />
                </div>
-               <hr/>
-               <h3 className="center-text">Recent Reviews</h3>
-                <br/>
-                <div id="reviews-previous-reviews">
-                    {renderReviews(PopularReviews)}
-                </div>
-                <hr/>
+               <br/>
                 <h3 className="center-text">Popular Reviews</h3>
                 <br/>
                 <div id="reviews-previous-reviews">

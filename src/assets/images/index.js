@@ -4,7 +4,8 @@ import Home3 from './home_3.jpg';
 import ReviewPage from './reviewpage.jpg';
 import Sample_Album from './sample_album.png';
 import Sample_Arist from './sample_artist.png';
+import Logo from './logo.png';
 
 const Home_Album = [Home1, Home2, Home3]
 
-export {Home_Album, Sample_Album, Sample_Arist, ReviewPage};
+export {Home_Album, Sample_Album, Sample_Arist, ReviewPage, Logo};

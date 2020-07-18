@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {PopularReviews, SampleReviews} from '../data';
-import {Navigation, Footer, Icon, Card} from '../components';
+import {Navigation, Footer, Icon, Card, Mainlogo} from '../components';
 import {InputGroup, FormControl, Button, Jumbotron} from 'react-bootstrap';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
@@ -38,11 +38,19 @@ const Reviews = ()=>{
             <header>
                 <Navigation/>
                 <section id="header-content">
-                    <h1 className="title">Jazz Note</h1>
-                    <sub>Music and Review</sub>
+                    <Mainlogo/>
                 </section>
             </header>
             <section className="main-content">
+                <Jumbotron id="reviews-jumbotron" className="main-content-jumbotron">
+                    <div className="main-content-jumbotron-text">
+                        <h3>About this page</h3>
+                        <p>
+                            I post reviews of Jazz albums of my choice.
+                            You can find all my reviews here.
+                        </p>
+                    </div>
+                </Jumbotron>
                 <InputGroup className="mb-3">
                     <FormControl
                         onChange={event=>setSearch(event.target.value)}
@@ -53,13 +61,10 @@ const Reviews = ()=>{
                         <Icon icon={faSearch} size="1x" color="#000000"/>
                     </Button>
                 </InputGroup>
-                <Jumbotron id="reviews-jumbotron" className="main-content-jumbotron">
-                   
-                </Jumbotron>
                 <div id="reviews-search-result">
                     {renderReviews(result)}
                 </div>
-                <br/>
+                <hr/>
                 <h3 className="center-text">Popular Reviews</h3>
                 <br/>
                 <div id="reviews-previous-reviews">

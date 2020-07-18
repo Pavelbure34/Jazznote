@@ -1,3 +1,27 @@
+#main-logo{
+    display:block;
+    margin: 1vh auto 0 auto;
+    width:28vw;
+    @media (max-width: $tablet-break) {
+        width:45vw;
+    }
+}
+
+//width related
+.width100{
+    width:100%;
+}
+
+.width33{
+    width:33.3%;
+}
+
+//display related
+.InlineBlock{
+    display:inline-block;
+}
+
+//float related
 .clearB{
     clear:both;
 }
@@ -6,19 +30,22 @@
     float:left;
 }
 
+//centering related
 .center-text{
     text-align: center;
 }
 
+//custom components
 .container {
     display:inline-block;
     position: relative;
-    width: 33.3%;
     &:hover .overlay{
         bottom: 0;
         height: 100%;
     }
     @media (max-width: $mobile-break) {
+        display:block;
+        margin: 1vh auto 1vh auto;
         width:100%;
     }
 
@@ -26,10 +53,15 @@
         display: block;
         width: 100%;
         height: auto;
+        border-radius: 10px;
     }
 
     .overlay {
+        white-space: nowrap;
+        overflow-x: auto;
+
         position: absolute;
+        border-radius: 10px;
         bottom: 100%;
         left: 0;
         right: 0;
@@ -45,7 +77,7 @@
         font-size: 20px;
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 50%;    
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);

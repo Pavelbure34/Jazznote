@@ -5,11 +5,11 @@
     margin: 0;
     
     // grid-template-columns: 6% 88% 6%;
-    grid-template-rows: 35vh auto 10vh;
-    @media screen and (max-width: $tablet-break) {
-        // grid-template-columns: 2% 96% 2%;
-        grid-template-rows: 30vh auto 10vh;
-    }
+    grid-template-rows: 49vh auto 10vh;
+    // @media screen and (max-width: $tablet-break) {
+    //     grid-template-columns: 2% 96% 2%;
+    //     grid-template-rows: 30vh auto 10vh;
+    // }
 
     grid-template-areas: 
         "header"
@@ -125,7 +125,7 @@
 
         #about-this-blog{
             background:rgba(0,0,0, 0.3);
-            height: 40vh;
+            height: 35vh;
 
             .video-bg{
                 position: absolute;
@@ -136,26 +136,21 @@
         }
 
         #album-of-this-month{
-            .main-content-body-image{
-                height:45vh;
-                @media (max-width: $mobile-break) {
-                    display:block;
-                    width:95%;
-                    height:auto;
-                    margin:0 auto 0 auto;
-                }
-            }
+            // background: url("../assets/images/sample_album.png"), rgba(0, 0, 0, 0.5);
+            // background-repeat: no-repeat;
+            // background-size: cover;
+            // background-position-x: center;
+            // background-position-y: center;
+            // height: 120vh;
 
-            .album-of-this-month-artist-name{
-                margin:0 2vh 0 0;
-            }
+            // display:flex;
+            // justify-content: center;
+            // align-items: center;
+            // text-align: center;
 
-            .album-of-this-month-artist-image{
-                width:100px;
-                height:100px;
-                justify-self: right;
-                align-self: flex-end;
-            }
+            // h2{
+            //     line-height: 1.5rem;
+            // }
         }
    
     }
@@ -165,6 +160,7 @@
     .main-content{
         #reviews-jumbotron{
             background-image: url('../assets/images/reviewpage.jpg');
+            background-color: rgba(0, 0, 0, 0.5);
             background-position-x: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -172,6 +168,11 @@
             -moz-animation:    reviews-image-mover 25s infinite; /* Fx 5+ */
             -o-animation:      reviews-image-mover 25s infinite; /* Opera 12+ */
             animation:         reviews-image-mover 25s infinite; /* IE 10+, Fx 29+ */
+
+            .main-content-jumbotron-text{
+                // background-color:rgba(0, 0, 0, 0.5);
+                // color:#000000;
+            }
         }
     }
 }
