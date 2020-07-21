@@ -10,7 +10,7 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 More screenshots and videos will be uploaded as more pages are complete.
 <br/>
 <figure class="video_container">
-  <video controls="false" allowfullscreen="true" autoplay="autoplay" muted loop="loop">
+  <video controls="true" allowfullscreen="true" poster="./src/assets/images/homePage.png">
     <source src="./src/assets/video/homePage.mp4" type="video/mp4">
   </video>
 </figure>
