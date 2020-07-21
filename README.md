@@ -9,11 +9,15 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 <h2>Screenshots and videos</h2>
 More screenshots and videos will be uploaded as more pages are complete.
 <br/>
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="./src/assets/images/homePage.png">
+<video width="100%"  poster="./src/assets/images/homePage.png" controls>
+  <source src="./src/assets/video/homePage.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<!-- <figure class="video_container">
+  <video controls="true" allowfullscreen="true">
     <source src="./src/assets/video/homePage.mp4" type="video/mp4">
   </video>
-</figure>
+</figure> -->
 
 <h2>Available Scripts</h2>
 In the project directory, you can run:
