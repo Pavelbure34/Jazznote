@@ -8,13 +8,13 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe src="./src/assets/video/homePage.mov" frameborder="0" allowfullscreen="true"> </iframe>
+  <video controls="true" allowfullscreen="true">
+    <source src="./src/assets/video/homePage.mov" type="video/mov">
+  </video>
 </figure>
 <!-- blank line -->
 
-
-## Available Scripts
-
+<h2>Available Scripts</h2>
 In the project directory, you can run:
 
 ### `sudo yarn start`
