@@ -2,17 +2,18 @@
 I aim to review Jazz albums of my choice monthly in this project.
 I plan to launch this blog. Until then this code is public.
 This project is made with React, Bootstrap, React-Bootstrap, SASS, and React-fontawesome.
-<!-- blank line -->
+<br/>
 The stock images in this project are from unsplash.com. 
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<!-- blank line -->
+<h2>Screenshots and videos</h2>
+More screenshots and videos will be uploaded as more pages are complete.
+<br/>
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="./src/assets/video/homePage.mov" type="video/mov">
+  <video controls="false" allowfullscreen="true" autoplay="autoplay" muted loop="loop">
+    <source src="./src/assets/video/homePage.mp4" type="video/mp4">
   </video>
 </figure>
-<!-- blank line -->
 
 <h2>Available Scripts</h2>
 In the project directory, you can run:
