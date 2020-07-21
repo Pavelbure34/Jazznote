@@ -6,18 +6,10 @@ This project is made with React, Bootstrap, React-Bootstrap, SASS, and React-fon
 The stock images in this project are from unsplash.com. 
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<h2>Screenshots and videos</h2>
+<h2>Screenshots</h2>
 More screenshots and videos will be uploaded as more pages are complete.
 <br/>
-
-<video width="100%" controls>
-  <source src="./src/assets/video/homePage.mp4" type="video/mp4">
-</video>
-<!-- <figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="./src/assets/video/homePage.mp4" type="video/mp4">
-  </video>
-</figure> -->
+<img src="/src/assets/images/homePage.png" width="50%" alt="home-page"/>
 
 <h2>Available Scripts</h2>
 In the project directory, you can run:
