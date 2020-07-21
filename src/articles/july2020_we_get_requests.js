@@ -121,13 +121,16 @@ const July2020_wegetrequests = ()=>{
                         </Tabs>
                     </div>
                 </div>
-                <div id="review-artist-information">
+                {/* <div id="review-artist-information">
                     <div id="review-artist-information-text">
                         <p>Leading Artist</p>
                         <h3>Oscar Peterson</h3>
                         <p>1927 ~ 2007</p>
                     </div>
                     <img src={Sample_Arist} id="review-artist-information-image" alt="artist image"/>
+                </div> */}
+                <div>
+                    
                 </div>
                 <PopularReviews/>
            </section>

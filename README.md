@@ -4,6 +4,8 @@ This project is made with React, Bootstrap, React-Bootstrap, SASS, and React-fon
 The stock images in this project are from unsplash.com. 
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![Watch the video]]('./src/assets/video/homePage.mov')
+
 ## Available Scripts
 
 In the project directory, you can run:
