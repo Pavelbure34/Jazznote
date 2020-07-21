@@ -9,7 +9,7 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 <h2>Screenshots</h2>
 More screenshots and videos will be uploaded as more pages are complete.
 <br/>
-<img src="/src/assets/images/homePage.png" width="100%" alt="home-page"/>
+<img src="/src/assets/images/homePage.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
 
 <h2>Available Scripts</h2>
 In the project directory, you can run:
