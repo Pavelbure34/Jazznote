@@ -1,6 +1,6 @@
-<h2>Personal Project: Jazz Note</h2>
+<h2>Personal Project: Jazz Note Demo Blog</h2>
 I aim to review Jazz albums of my choice monthly in this project.
-I plan to launch this blog. Until then this code is public.
+I plan to launch this blog and this is a demo for the blog.
 This project is made with React, Bootstrap, React-Bootstrap, SASS, and React-fontawesome.
 <br/>
 The stock images in this project are from unsplash.com. 
