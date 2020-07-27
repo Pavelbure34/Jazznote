@@ -10,9 +10,9 @@ It was bootstrapped with [Create React App](https://github.com/facebook/create-r
 More screenshots and videos will be uploaded as more pages are complete.
 <br/>
 <img src="/src/assets/images/homePage.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
-<br/>
+<hr/>
 <img src="/src/assets/images/review1.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
-<br/>
+<hr/>
 <img src="/src/assets/images/review2.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
 
 <h2>Available Scripts</h2>
