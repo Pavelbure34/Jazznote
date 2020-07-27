@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navigation, Footer, Card, Mainlogo, PopularReviews} from '../components';
 import {Jumbotron} from 'react-bootstrap';
-import {Sample_Album, Sample_Arist} from '../assets/images';
+import {WeGetRequests} from '../assets/images';
 import {SpinningTurnTable as Turntable} from '../assets/video';
 
 const Home = ()=>{
@@ -36,7 +36,7 @@ const Home = ()=>{
                <br/>
                 <div id="album-of-this-month" className="main-content-body">
                     <Card
-                        image={Sample_Album}
+                        image={WeGetRequests}
                         album={"We Get Requests"} artist={"Oscar Peterson"}
                         month={today.getMonth() + 1} year={2020}
                         link={'/reviews/wegetrequests'}

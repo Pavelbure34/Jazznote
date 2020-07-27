@@ -18,7 +18,7 @@ const Navigation = ()=>{
                         Monthly Album Review
                     </NavLink>
                     <NavLink className="nav-link" to="/events">
-                        Events
+                        Contacts
                     </NavLink>
                 </Nav>
             </Collapse>

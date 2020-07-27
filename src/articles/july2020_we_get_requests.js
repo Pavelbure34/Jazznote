@@ -2,10 +2,86 @@ import React from 'react';
 import {RenderMonth} from '../funcs';
 import {Footer, Navigation, PopularReviews} from '../components';
 import {Table, Tabs, Tab} from 'react-bootstrap';
-import {Sample_Arist, Sample_Album} from '../assets/images';
-import './styles/july2020_we_get_requests.scss';
+import {OscarPeterson, WeGetRequests} from '../assets/images';
 
 const July2020_wegetrequests = ()=>{
+    const Tracklist = [
+        {
+            id:1,
+            song:'Corcovado',
+            duration:'2:49'
+        },
+        {
+            id:2,
+            song:'The Days of Wines and Roses',
+            duration:'2:40'
+        },
+        {
+            id:3,
+            song:'My One and Only Love',
+            duration:'5:08'
+        },
+        {
+            id:4,
+            song:'People',
+            duration:'3:30'
+        },
+        {
+            id:5,
+            song:'Have You Met Miss Jones',
+            duration:'4:10'
+        },
+        {
+            id:6,
+            song:'You Look Good To Me',
+            duration:'4:49'
+        },
+        {
+            id:7,
+            song:'The Girl From Ipanema',
+            duration:'4:49'
+        },
+        {
+            id:8,
+            song:'D&E',
+            duration:'5:11'
+        },
+        {
+            id:9,
+            song:'Time And Again',
+            duration:'4:38'
+        },
+        {
+            id:10,
+            song:'Goodbye J.D',
+            duration:'2:56'
+        },
+    ];
+
+    const renderTracks = ()=>{
+        return Tracklist.map(track=>{
+            const {id, song, duration} = track;
+            return (
+                <tr key={id}>
+                    <td>
+                        <span className="review-essential-information-label">
+                            {id}.
+                        </span>
+                    </td>
+                    <td>
+                        <span className="review-essential-information-info">
+                            {song}
+                        </span>
+                    </td>
+                    <td>
+                        <span className="review-essential-information-info">
+                            {duration}
+                        </span>
+                    </td>
+                </tr>
+            );
+        });
+    };
 
     return (
         <article id="july2020-we_get_requests" className="review">
@@ -20,7 +96,7 @@ const July2020_wegetrequests = ()=>{
            <section className="main-content">
                 <div id="review-essential-information">
                     <img
-                        src={Sample_Album}
+                        src={WeGetRequests}
                         id="review-essential-information-image"
                         alt="album-art"
                     />
@@ -81,57 +157,59 @@ const July2020_wegetrequests = ()=>{
                             <Tab eventKey="tracks" title="Track List">
                                 <Table responsive>
                                     <tbody>
-                                        <tr>
-                                            <td>
-                                                <span className="review-essential-information-label">
-                                                    1.
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <span className="review-essential-information-info">
-                                                    Corcovado
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <span className="review-essential-information-info">
-                                                    2:49
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <span className="review-essential-information-label">
-                                                    2.
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <span className="review-essential-information-info">
-                                                    The Days of Wines and Roses
-                                                </span>
-                                            </td>
-                                            <td>
-                                                <span className="review-essential-information-info">
-                                                    2:40
-                                                </span>
-                                            </td>
-                                        </tr>
+                                        {renderTracks()}
                                     </tbody>
                                 </Table>
                             </Tab>
                         </Tabs>
                     </div>
                 </div>
-                {/* <div id="review-artist-information">
-                    <div id="review-artist-information-text">
-                        <p>Leading Artist</p>
-                        <h3>Oscar Peterson</h3>
-                        <p>1927 ~ 2007</p>
-                    </div>
-                    <img src={Sample_Arist} id="review-artist-information-image" alt="artist image"/>
-                </div> */}
-                <div>
+                <br/>
+                <article>
+                    <section>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                        aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                        aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                        aliquam id sapien.
+                    </section>
+                    <blockquote className="review-album-oneliner">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    </blockquote>
+                    <section>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                        aliquam id sapien.Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                        aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                        aliquam id sapien.
+                    </section>
+                </article>
+                <br/>
+                <section className="review-artist-information">
+                    <img src={OscarPeterson} className="review-artist-information-image" alt="artist-image"/>
+                    <article className="review-artist-information-text">
+                        <h3>Oscar Peterson(1925 ~ 2007)</h3>
+                        <section>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                            aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                            aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                            aliquam id sapien.
+                        </section>
+                    </article>
+                </section>
+                <br/>
+                <section>
+                    <h3 className="center-text">Source for information</h3>
                     
-                </div>
+                </section>
+                <br/>
                 <PopularReviews/>
            </section>
            <footer>

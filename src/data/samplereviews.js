@@ -1,4 +1,4 @@
-import {Sample_Album} from '../assets/images';
+import {WeGetRequests, SoulStatoin, MotionsEmotions} from '../assets/images';
 
 const PopularReviews = [
     {
@@ -8,25 +8,25 @@ const PopularReviews = [
         month: 7,
         year: 2020,
         link:'/reviews/wegetrequests',
-        image: Sample_Album
+        image: WeGetRequests
     },
     {
         id:2,
-        album:'We Get Requests',
-        artist:'The Oscar Peterson Trio',
-        month: 7,
+        album:'Motions and Emotions',
+        artist:'Oscar Peterson',
+        month: 8,
         year: 2020,
         link:'/reviews/wegetrequests',
-        image: Sample_Album
+        image: MotionsEmotions
     },
     {
         id:3,
-        album:'We Get Requests',
-        artist:'The Oscar Peterson Trio',
-        month: 7,
+        album:'Soul Station',
+        artist:'Hank Mobley',
+        month: 9,
         year: 2020,
         link:'/reviews/wegetrequests',
-        image: Sample_Album
+        image: SoulStatoin
     }
 ];
 
@@ -38,43 +38,25 @@ const SampleReviews = [
         month: 7,
         year: 2020,
         link:'/reviews/wegetrequests',
-        image: Sample_Album
+        image: WeGetRequests
     },
     {
         id:2,
-        album:'We Get Requests',
-        artist:'The Oscar Peterson Trio',
-        month: 7,
+        album:'Motions and Emotions',
+        artist:'Oscar Peterson',
+        month: 8,
         year: 2020,
         link:'/reviews/wegetrequests',
-        image: Sample_Album
+        image: MotionsEmotions
     },
     {
         id:3,
-        album:'We Get Requests',
-        artist:'The Oscar Peterson Trio',
-        month: 7,
+        album:'Soul Station',
+        artist:'Hank Mobley',
+        month: 9,
         year: 2020,
         link:'/reviews/wegetrequests',
-        image: Sample_Album
-    },
-    {
-        id:4,
-        album:'We Get Requests',
-        artist:'The Oscar Peterson Trio',
-        month: 7,
-        year: 2020,
-        link:'/reviews/wegetrequests',
-        image: Sample_Album
-    },
-    {
-        id:5,
-        album:'We Get Requests',
-        artist:'The Oscar Peterson Trio',
-        month: 7,
-        year: 2020,
-        link:'/reviews/wegetrequests',
-        image: Sample_Album
+        image: SoulStatoin
     }
 ];
 

@@ -1,11 +1,19 @@
-import Home1 from './home_1.jpg';
-import Home2 from './home_2.jpg';
-import Home3 from './home_3.jpg';
-import ReviewPage from './reviewpage.jpg';
-import Sample_Album from './sample_album.png';
-import Sample_Arist from './sample_artist.png';
-import Logo from './logo.png';
+const Logo = "https://jazznotedemoimage.s3.amazonaws.com/logo.png";
+const ReviewPage = "https://jazznotedemoimage.s3.amazonaws.com/reviewpage.jpg";
 
-const Home_Album = [Home1, Home2, Home3]
+const WeGetRequests = "https://jazznotedemoimage.s3.amazonaws.com/WeGetRequests.jpg";
+const MotionsEmotions = "https://jazznotedemoimage.s3.amazonaws.com/Motions%26Emotions.jpg";
+const SoulStatoin = "https://jazznotedemoimage.s3.amazonaws.com/SoulStation.jpg";
 
-export {Home_Album, Sample_Album, Sample_Arist, ReviewPage, Logo};
+const OscarPeterson = "https://jazznotedemoimage.s3.amazonaws.com/Oscar+Peterson.png";
+const HankMobley = "https://jazznotedemoimage.s3.amazonaws.com/HankMobley.jpeg";
+
+export {
+    WeGetRequests,
+    MotionsEmotions,
+    SoulStatoin,
+    OscarPeterson,
+    HankMobley,
+    ReviewPage,
+    Logo
+};

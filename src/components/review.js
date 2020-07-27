@@ -117,6 +117,8 @@ const Review = (props)=>{
                         </Tabs>
                     </div>
                 </div>
+                {children}
+                <br/>
                 <PopularReviews/>
            </section>
            <footer>

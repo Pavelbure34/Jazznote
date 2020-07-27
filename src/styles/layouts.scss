@@ -4,13 +4,7 @@
     height:100vh;
     margin: 0;
     
-    // grid-template-columns: 6% 88% 6%;
     grid-template-rows: 49vh auto 10vh;
-    // @media screen and (max-width: $tablet-break) {
-    //     grid-template-columns: 2% 96% 2%;
-    //     grid-template-rows: 30vh auto 10vh;
-    // }
-
     grid-template-areas: 
         "header"
         "main"
@@ -145,7 +139,7 @@
 #reviews{
     .main-content{
         #reviews-jumbotron{
-            background: url('../assets/images/reviewpage.jpg');
+            background: url('https://jazznotedemoimage.s3.amazonaws.com/reviewpage.jpg');
             background-position-x: center;
             background-position-y: top;
             background-repeat: no-repeat;
@@ -212,23 +206,45 @@
             }
         }
 
-        #review-artist-information{
-            display:flex;
-            justify-content: right;
-            align-items: center;
+        article section{
+            text-indent: 2vw;
+        }
+
+        .review-album-oneliner{
+            display:block;
+            width:50%;
+            margin:2vh auto 2vh auto;
+            text-align: center;
             @media (max-width: $tablet-break) {
-                display:block;
+                width:70%;
+            }
+        }
+
+        .review-artist-information{
+            display:flex;
+            align-items: center;   
+            @media (max-width: $tablet-break) {
+                display: block;
             }
 
-            #review-artist-information-image{
-                width:150px;
+           .review-artist-information-image{
+                width:20vw;
                 border-radius: 10px;
                 margin: 1vh 1vw 1vh 1vw;
-            }
+                @media (max-width: $tablet-break) {
+                    display: block;
+                    width:40%;
+                    margin: 1vh auto 1vh auto;
+                }
+           }
 
-            #review-artist-information-text{
-                text-align: right;
-            }
+           .review-artist-information-text{
+               h3{
+                    @media (max-width: $tablet-break) {
+                        text-align: center;
+                    }
+               }
+           }
         }
     }
 }
