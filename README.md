@@ -1,7 +1,7 @@
 <h2>Personal Project: Jazz Note Demo Blog</h2>
 <img
     src="https://jazznotedemoimage.s3.amazonaws.com/logo.png"
-    width="80%"
+    width="50%"
     style="margin: 0 auto 1vh auto;"
     alt="main-logo"
 />
