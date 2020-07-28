@@ -1,12 +1,37 @@
 <h2>Personal Project: Jazz Note Demo Blog</h2>
 I aim to review Jazz albums of my choice monthly in this project.
 I plan to launch this blog and this is a demo for the blog.
-This project is made with React, Bootstrap, React-Bootstrap, SASS, and React-fontawesome.
-<br/>
-The stock images in this project are from unsplash.com. 
-It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This README is written by Alistaire Suh.
 
-<h2>Screenshots</h2>
+### Contents
+<ul>
+    <li><a href="#instructions">Instructions</a></li>
+    <li><a href="#tech-stack">Tech Stack</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#available-scripts">Available Scripts</a></li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+<ol>
+    <li>check if NPM, NODE, and Yarn are installed on your machine</li>
+    <li>If not, install Node and Yarn in the order mentioned</li>
+    <li>clone the repo</li>
+    <li>At the root of the project, type "yarn install"</li>
+    <li>run the project with "yarn start"</li>
+    <li>If you use Linux or Mac, use "sudo" at every yarn command</li>
+</ol>
+
+<h2 id="tech-stack">Tech Stack</h2>
+<ul>
+    <li>React -> Core Module</li>
+    <li>Bootstrap & React-Bootstrap -> Frontend framework</li>
+    <li>node-sass -> better CSS Compiler</li>
+    <li>react-fontaweomse -> Icon library</li>
+    <li>unsplash, discog -> for stock images</li>
+</ul>
+It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
+
+<h2 id="screenshots">Screenshots</h2>
 More screenshots and videos will be uploaded as more pages are complete.
 <br/>
 <img src="/src/assets/images/homePage.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
@@ -15,7 +40,7 @@ More screenshots and videos will be uploaded as more pages are complete.
 <hr/>
 <img src="/src/assets/images/review2.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
 
-<h2>Available Scripts</h2>
+<h2 id="available-scripts">Available Scripts</h2>
 In the project directory, you can run:
 
 ### `sudo yarn start`
