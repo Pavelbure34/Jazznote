@@ -1,4 +1,10 @@
 <h2>Personal Project: Jazz Note Demo Blog</h2>
+<img
+    src="https://jazznotedemoimage.s3.amazonaws.com/logo.png"
+    width="80%"
+    style="margin: 0 auto 1vh auto;"
+    alt="main-logo"
+/>
 I aim to review Jazz albums of my choice monthly in this project.
 I plan to launch this blog and this is a demo for the blog.
 This README is written by Alistaire Suh.
