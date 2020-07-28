@@ -26,7 +26,7 @@ This README is written by Alistaire Suh.
     <li>React -> Core Module</li>
     <li>Bootstrap & React-Bootstrap -> Frontend framework</li>
     <li>node-sass -> better CSS Compiler</li>
-    <li>react-fontaweomse -> Icon library</li>
+    <li>react-fontawesome -> Icon library</li>
     <li>unsplash, discog -> for stock images</li>
 </ul>
 It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). 
