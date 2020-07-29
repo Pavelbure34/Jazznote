@@ -1,4 +1,4 @@
-<h2>Personal Project: Jazz Note Demo Blog</h2>
+<h1>Personal Project: Jazz Note Demo Blog</h1>
 <img
     src="https://jazznotedemoimage.s3.amazonaws.com/logo.png"
     width="40%"
@@ -6,7 +6,8 @@
     alt="main-logo"
 />
 <ul>
-    <li>Demo URL: https://jazznote-demo.web.app/</li>
+    <li>Demo URL 1: https://jazznote-demo.web.app</li>
+    <li>Demo URL 2: https://jazznote-demo.firebaseapp.com</li>
 </ul>
 
 ### Contents
