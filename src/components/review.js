@@ -85,11 +85,12 @@ const Review = (props)=>{
     };
 
     const RenderSources = ()=>{
-        return src.map(source=>{
+        return src.map(each=>{
+            const {id, title, source, url}  = each;
             return (
-                <p><a href={source}>
-                    {source}
-                </a></p>
+                <li key={id}>
+                    <sub>{title}. {source}. <a href={url}>{url}</a></sub>
+                </li>
             );
         });
     };
@@ -175,8 +176,12 @@ const Review = (props)=>{
                     </div>
                 </div>
                 {children}
+                <br/>
                 <section>
-                    {RenderSources()}
+                    <ul>
+                        <h4>References</h4>
+                        {RenderSources()}
+                    </ul>
                 </section>
                 <br/>
                 <PopularReviews/>

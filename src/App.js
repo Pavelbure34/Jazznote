@@ -8,7 +8,6 @@ import {
 } from 'react-router-dom';
 import {Home, Reviews} from './pages';
 import {Review} from './components';
-import {Articles} from './articles';
 
 const App = ()=>{
   const renderArticlesLinks = ()=>{

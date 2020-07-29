@@ -96,20 +96,21 @@ const Reviews = ()=>{
 
     const filterSearchResult = ()=>{
         let res = [];
-    
         if (search !== "" && (searchBy === "Title" || searchBy === "Artist")){
             const keyword = ToLowerCase(search).trim();
-            res = SampleReviews.filter(item=>{
+            SampleReviews.forEach(item=>{
                 const {album, artist} = item;
                 if (searchBy === "Title" && ToLowerCase(album).trim().includes(keyword))
-                    return item;
+                    res.push(item);
                 else if (searchBy === "Artist" && ToLowerCase(artist).trim().includes(keyword))
-                    return item;
+                    res.push(item);
             });
         } else if (searchBy === "Date"){
-            res = SampleReviews.filter(item=>{
-                if (item.year === year && item.month === month)
-                    return item;
+            SampleReviews.forEach(item=>{
+                const target = `${year} ${month}`; 
+                const each = `${item.year} ${item.month}`;
+                if (target === each)
+                    res.push(item);
             });
         }
         setResult(res);

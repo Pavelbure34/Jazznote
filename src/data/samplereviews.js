@@ -30,8 +30,18 @@ const SampleReviews = [
         link:'/reviews/wegetrequests',
         image: WeGetRequests,
         src:[
-            'https://www.discogs.com/The-Oscar-Peterson-Trio-We-Get-Requests/master/115882',
-            'https://en.wikipedia.org/wiki/We_Get_Requests'
+            {
+                id: 1,
+                title: 'We Get Requests',
+                source:'Discogs',
+                url:'https://www.discogs.com/The-Oscar-Peterson-Trio-We-Get-Requests/master/115882'
+            },
+            {
+                id: 2,
+                title: 'We Get Requests',
+                source:'Wikepedia',
+                url:'https://en.wikipedia.org/wiki/We_Get_Requests'
+            }
         ],
         tracklist:[
             {
@@ -120,8 +130,18 @@ const SampleReviews = [
         link:'/reviews/motionsemotions',
         image: MotionsEmotions,
         src:[
-            'https://www.discogs.com/Oscar-Peterson-Motions-Emotions/master/142697',
-            'https://en.wikipedia.org/wiki/Motions_and_Emotions'
+            {
+                id: 1,
+                title: 'Motions and Emotions',
+                source:'Discogs',
+                url:'https://www.discogs.com/Oscar-Peterson-Motions-Emotions/master/142697'
+            },
+            {
+                id: 2,
+                title: 'Motions and Emotions',
+                source:'Wikepedia',
+                url:'https://en.wikipedia.org/wiki/Motions_and_Emotions'
+            }
         ],
         tracklist:[
             {
@@ -210,8 +230,18 @@ const SampleReviews = [
         link:'/reviews/soulstations',
         image: SoulStatoin,
         src:[
-            'https://www.discogs.com/Hank-Mobley-Soul-Station/release/5736124',
-            'https://en.wikipedia.org/wiki/Soul_Station'
+            {
+                id: 1,
+                title: 'Soul Station',
+                source:'Discogs',
+                url:'https://www.discogs.com/Hank-Mobley-Soul-Station/release/5736124'
+            },
+            {
+                id: 2,
+                title: 'Soul Station',
+                source:'Wikepedia',
+                url:'https://en.wikipedia.org/wiki/Soul_Station'
+            }
         ],
         tracklist:[
             {
