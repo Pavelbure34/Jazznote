@@ -1,3 +1,13 @@
+/*
+    renderMonth.js : function that renders month text
+
+    Parameter:
+        month: integer from 1 ~ 12
+    
+    How to use:
+        RenderMonth(11) //renders November
+*/
+
 const RenderMonth = (month)=>{
     switch (month){
         case 12:

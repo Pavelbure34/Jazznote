@@ -1,12 +1,20 @@
 import React from 'react';
 import {Nav} from 'react-bootstrap';
 import {Icon} from '.';
-import {faInstagram, faTwitter, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {
+    faInstagram,
+    faTwitter,
+    faLinkedin
+} from '@fortawesome/free-brands-svg-icons';
+
+/*
+    footer.js : Footer of the page
+*/
 
 const Footer = ()=>{
     const {Item, Link} = Nav;
     return (
-        <Nav className="justify-content-center">
+        <Nav id="contacts" className="justify-content-center">
             <Item>
                 <Link href="https://www.linkedin.com/in/dongbin-alistaire-suh-90350ba8/">
                     <Icon icon={faLinkedin} size="1x" color="#0072b1"/>

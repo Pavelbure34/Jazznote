@@ -1,3 +1,7 @@
+/*
+    This images are stored in the Amazon S3 bucket.
+*/
+
 const Logo = "https://jazznotedemoimage.s3.amazonaws.com/logo.png";
 const ReviewPage = "https://jazznotedemoimage.s3.amazonaws.com/reviewpage.jpg";
 

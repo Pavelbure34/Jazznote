@@ -1,6 +1,8 @@
 import {useState, useEffect} from 'react';
 
 /*
+    dynamicTransition.js : dynamic album effect using useEffect and useState
+
     When you find repeated logic behind the hook,make them as custom hook.
     Make the unique points as arguments. Keep the rest as backend functions.
     

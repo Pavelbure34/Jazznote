@@ -3,17 +3,45 @@ import {RenderMonth} from '../funcs';
 import {Navigation, Footer, PopularReviews} from '.';
 import {Table, Tabs, Tab} from 'react-bootstrap';
 
+/*
+    review.js : Page for review
+    Parameter:
+        information = JSON object holding album information
+        year = the year of review
+        month =  month when review is posted
+        id = special identification for this review empty string by default
+        children = contents of the review
+    
+    How to use this block:
+        <Review
+            id="sample review"
+            information = {sample_info}
+            year = {2020}
+            month = {10}
+        >
+            {contents go here}
+        </Review>
+*/
+
 const Review = (props)=>{
-    const {children, information, year, month, id} = props;
+    const {children, information} = props;
     const {
-        title, artist, recorded_year, label,
-        producer, album_length, src, tracks,
-        album_image, artist_image
+        year,
+        month,
+        album,
+        recorded_year,
+        label,
+        producer,
+        artist,
+        session,
+        image,
+        src,
+        tracklist
     } = information;
     
     const renderTracks = ()=>{
-        return tracks.map(track=>{
-            const {id, track_title, track_length} = track;
+        return tracklist.map(track=>{
+            const {id, song, duration} = track;
             return (
                 <tr key={id}>
                     <td>
@@ -23,12 +51,12 @@ const Review = (props)=>{
                     </td>
                     <td>
                         <span className="review-essential-information-info">
-                            {track_title}
+                            {song}
                         </span>
                     </td>
                     <td>
                         <span className="review-essential-information-info">
-                            {track_length}
+                            {duration}
                         </span>
                     </td>
                 </tr>
@@ -36,20 +64,50 @@ const Review = (props)=>{
         });
     };
 
+    const RenderSessionmen = ()=>{
+        return session.map(man=>{
+            const {id, name, instrument} = man;
+            return (
+                <tr key={id}>
+                     <td>
+                        <span className="review-essential-information-label">
+                            {name}.
+                        </span>
+                    </td>
+                    <td>
+                        <span className="review-essential-information-info">
+                            {instrument}
+                        </span>
+                    </td>
+                </tr>
+            );
+        });
+    };
+
+    const RenderSources = ()=>{
+        return src.map(source=>{
+            return (
+                <p><a href={source}>
+                    {source}
+                </a></p>
+            );
+        });
+    };
+
     return (
-        <article id={id} className="review">
+        <article className="review">
             <header>
                 <Navigation/>
                 <section id="header-content">
                     <p>{RenderMonth(month)}. {year}</p>
-                    <h2>{title}</h2>
+                    <h2>{album}</h2>
                     <p>{artist}</p>
                 </section>
            </header>
            <section className="main-content">
             <div id="review-essential-information">
                     <img
-                        src={album_image}
+                        src={image}
                         id="review-essential-information-image"
                         alt="album-art"
                     />
@@ -62,7 +120,7 @@ const Review = (props)=>{
                                             Title
                                         </span>
                                         <span className="review-essential-information-info">
-                                            {title}
+                                            {album}
                                         </span>
                                     </li>
                                     <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -97,15 +155,14 @@ const Review = (props)=>{
                                             {producer}
                                         </span>
                                     </li>
-                                    <li className="list-group-item d-flex justify-content-between align-items-center">
-                                        <span className="review-essential-information-label">
-                                            Length
-                                        </span>
-                                        <span className="review-essential-information-info">
-                                            {album_length}
-                                        </span>
-                                    </li>
                                 </ul>
+                            </Tab>
+                            <Tab eventKey="session" title="Session">
+                                <Table responsive>
+                                    <tbody>
+                                        {RenderSessionmen()}
+                                    </tbody>
+                                </Table>
                             </Tab>
                             <Tab eventKey="tracks" title="Track List">
                                 <Table responsive>
@@ -118,6 +175,9 @@ const Review = (props)=>{
                     </div>
                 </div>
                 {children}
+                <section>
+                    {RenderSources()}
+                </section>
                 <br/>
                 <PopularReviews/>
            </section>

@@ -1,21 +1,24 @@
 <h2>Personal Project: Jazz Note Demo Blog</h2>
 <img
     src="https://jazznotedemoimage.s3.amazonaws.com/logo.png"
-    width="50%"
-    style="margin: 0 auto 1vh auto;"
+    width="40%"
+    style="margin-left:auto;margin-right:auto;display:block;"
     alt="main-logo"
 />
-I aim to review Jazz albums of my choice monthly in this project.
-I plan to launch this blog and this is a demo for the blog.
-This README is written by Alistaire Suh.
 
 ### Contents
 <ul>
+    <li><a href="#whatisJazznote">What is Jazz Note?</a></li>
     <li><a href="#instructions">Instructions</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#available-scripts">Available Scripts</a></li>
 </ul>
+
+<h2 id="whatisJazznote">What is Jazz Note?</h2>
+I aim to review Jazz albums of my choice monthly in this project.
+I plan to launch this blog and this is a demo for the blog.
+This README is written by Alistaire Suh.
 
 <h2 id="instructions">Instructions</h2>
 <ol>

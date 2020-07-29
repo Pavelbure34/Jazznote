@@ -2,6 +2,10 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 import {Navbar, Nav} from 'react-bootstrap';
 
+/*
+    navigation.js -> Top Navigation bar based on React-bootstrap component.
+*/
+
 const Navigation = ()=>{
 
     const {Toggle, Collapse} = Navbar;
@@ -17,9 +21,9 @@ const Navigation = ()=>{
                     <NavLink className="nav-link" to="/reviews">
                         Monthly Album Review
                     </NavLink>
-                    <NavLink className="nav-link" to="/events">
+                    <a className="nav-link" href="#contacts">
                         Contacts
-                    </NavLink>
+                    </a>
                 </Nav>
             </Collapse>
         </Navbar>

@@ -1,6 +1,10 @@
 import React from 'react';
-import {PopularReviews as reviews} from '../data';
+import {SampleReviews as reviews} from '../data';
 import {RenderReviews} from '../funcs';
+
+/*
+    popularReviews.js : Block showing popular navigation
+*/
 
 const PopularReviews = ()=>{
     return (

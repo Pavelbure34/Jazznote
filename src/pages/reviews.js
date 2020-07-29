@@ -1,9 +1,29 @@
 import React, {useState} from 'react';
 import {SampleReviews} from '../data';
-import {RenderMonth, ToLowerCase, RenderReviews} from '../funcs';
-import {Navigation, Footer, Icon, Card, Mainlogo, PopularReviews} from '../components';
-import {InputGroup, FormControl, Button, Jumbotron, Form} from 'react-bootstrap';
+import {
+    RenderMonth,
+    ToLowerCase,
+    RenderReviews
+} from '../funcs';
+import {
+    Navigation,
+    Footer,
+    Icon,
+    Mainlogo,
+    PopularReviews
+} from '../components';
+import {
+    InputGroup,
+    FormControl,
+    Button,
+    Jumbotron,
+    Form
+} from 'react-bootstrap';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
+
+/*
+    reviews.js : Page showing reviews
+*/
 
 const Reviews = ()=>{
     const today = new Date();

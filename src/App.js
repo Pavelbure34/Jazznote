@@ -1,18 +1,44 @@
 import React from 'react';
+import {SampleReviews} from './data';
 import {
   BrowserRouter as Router,
-  Switch, Route, Redirect
+  Switch,
+  Route,
+  Redirect
 } from 'react-router-dom';
 import {Home, Reviews} from './pages';
+import {Review} from './components';
 import {Articles} from './articles';
 
 const App = ()=>{
   const renderArticlesLinks = ()=>{
-    return Articles.map(item=>{
-      const {id, Post, link} = item;
+    return SampleReviews.map(item=>{
+      const {id, link} = item;
       return (
         <Route key={id} exact path={link}>
-            <Post/>
+            <Review information = {item}>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    aliquam id sapien.
+                </section>
+                <blockquote className="review-album-oneliner">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                </blockquote>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    aliquam id sapien.Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    aliquam id sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vel iaculis libero. Sed mi mauris, convallis ac elementum nec,
+                    aliquam id sapien.
+                </section>
+            </Review>
         </Route>
       );
     });

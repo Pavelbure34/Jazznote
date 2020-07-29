@@ -1,8 +1,18 @@
 import React from 'react';
-import {Navigation, Footer, Card, Mainlogo, PopularReviews} from '../components';
+import {
+    Navigation,
+    Footer,
+    Card,
+    Mainlogo,
+    PopularReviews
+} from '../components';
 import {Jumbotron} from 'react-bootstrap';
 import {WeGetRequests} from '../assets/images';
 import {SpinningTurnTable as Turntable} from '../assets/video';
+
+/*
+    home.js : Default page when people visit for the first time
+*/
 
 const Home = ()=>{
     let today = new Date();
