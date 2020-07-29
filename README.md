@@ -5,6 +5,9 @@
     style="margin-left:auto;margin-right:auto;display:block;"
     alt="main-logo"
 />
+<ul>
+    <li>Demo URL: https://jazznote-demo.web.app/</li>
+</ul>
 
 ### Contents
 <ul>
@@ -12,6 +15,7 @@
     <li><a href="#instructions">Instructions</a></li>
     <li><a href="#tech-stack">Tech Stack</a></li>
     <li><a href="#screenshots">Screenshots</a></li>
+    <li><a href="#legalstatement">Legal Statement</a></li>
     <li><a href="#available-scripts">Available Scripts</a></li>
 </ul>
 
@@ -48,6 +52,9 @@ More screenshots and videos will be uploaded as more pages are complete.
 <img src="/src/assets/images/review1.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
 <hr/>
 <img src="/src/assets/images/review2.png" width="100%" style="border:1px solid #000000;" alt="home-page"/>
+
+<h2 id="legalstatement">Legal Statement</h2>
+Jazznote is an intellectual property of Dongbin suh.
 
 <h2 id="available-scripts">Available Scripts</h2>
 In the project directory, you can run:
