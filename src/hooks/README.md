@@ -3,5 +3,5 @@ This directory contains React Hook for the project.
 
 <h2>Contents</h2>
 <ul>
-    <li>dynamicTransition.js -> dynamic album effect using useEffect and useState</li>
+    <li>focusOnTop.js -> fixes the focus on top of page when rendered</li>
 </ul>

@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
+import {FocusOnTop} from '../hooks';
 import {SampleReviews} from '../data';
 import {
     RenderMonth,
@@ -26,6 +27,7 @@ import {faSearch} from '@fortawesome/free-solid-svg-icons';
 */
 
 const Reviews = ()=>{
+    FocusOnTop();
     const today = new Date();
     const current_year = today.getFullYear();
     const current_month = today.getMonth() + 1;
@@ -33,8 +35,8 @@ const Reviews = ()=>{
     const [searchBy, setSearchBy] = useState('Title');
     const [search, setSearch] = useState('');
     const [result, setResult] = useState([]);
-    const [month, setMonth] = useState(current_month)
-    const [year, setYear] = useState(current_year)
+    const [month, setMonth] = useState(current_month);
+    const [year, setYear] = useState(current_year);
    
     const renderYearOptions = ()=>{
         const years = [];
@@ -156,7 +158,6 @@ const Reviews = ()=>{
                 <PopularReviews/>
             </section>
             <footer>
-                <hr/>
                 <Footer/>
             </footer>
         </div>

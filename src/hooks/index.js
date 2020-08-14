@@ -1,1 +1,1 @@
-export * from './dynamicTransition';
+export * from './focusOnTop';

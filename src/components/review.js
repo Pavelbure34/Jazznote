@@ -1,4 +1,5 @@
 import React from 'react';
+import {FocusOnTop} from '../hooks';
 import {RenderMonth} from '../funcs';
 import {Navigation, Footer, PopularReviews} from '.';
 import {Table, Tabs, Tab} from 'react-bootstrap';
@@ -38,6 +39,7 @@ const Review = (props)=>{
         src,
         tracklist
     } = information;
+    FocusOnTop();
     
     const renderTracks = ()=>{
         return tracklist.map(track=>{
@@ -187,7 +189,6 @@ const Review = (props)=>{
                 <PopularReviews/>
            </section>
            <footer>
-                <hr/>
                 <Footer/>
            </footer>
         </article>

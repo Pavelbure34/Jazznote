@@ -1,4 +1,5 @@
 import React from 'react';
+import {FocusOnTop} from '../hooks';
 import {
     Navigation,
     Footer,
@@ -16,6 +17,7 @@ import {SpinningTurnTable as Turntable} from '../assets/video';
 
 const Home = ()=>{
     let today = new Date();
+    FocusOnTop();
 
     return (
         <div id="home">
@@ -57,7 +59,6 @@ const Home = ()=>{
                <PopularReviews/>
            </section>
            <footer>
-                <hr/>
                 <Footer/>
            </footer>
         </div>
